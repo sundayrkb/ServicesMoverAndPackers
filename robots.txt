@@ -1,3 +1,6 @@
+# Allow all search engines to crawl the site
 User-agent: *
-Allow: /
-Sitemap: https://servicesmover.tk/sitemap.xml
+Disallow:
+
+# Sitemap location
+Sitemap: https://sundayrkb.github.io/ServicesMoverAndPackers/sitemap.xml
