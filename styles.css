@@ -1,0 +1,6 @@
+:root{--brand:#0d6efd}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial}
+header{background:#f8f9fa}
+.card i{color:var(--brand)}
+#brand{color:var(--brand)}
