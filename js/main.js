@@ -121,6 +121,8 @@ function initNavigation() {
   setYear();
   // Re-run header scroll handler after header injected
   initStickyHeader();
+  // Init hero auto-hide
+  initHeroAutoHide();
   // Init navigation handler for file://
   initNavigation();
 })();
@@ -188,6 +190,33 @@ function initStickyHeader() {
     } else {
       header.classList.remove('scrolled');
     }
+  }, { passive: true });
+}
+
+// Auto-hide hero sections on scroll down, show on scroll up
+function initHeroAutoHide() {
+  const heroes = document.querySelectorAll('.services-hero, .locations-hero, .location-hero, .service-hero');
+  if (!heroes.length) return;
+  
+  let lastScroll = 0;
+  const threshold = 100;
+  
+  window.addEventListener('scroll', function() {
+    const currentScroll = window.pageYOffset;
+    
+    if (currentScroll > lastScroll && currentScroll > threshold) {
+      // Scrolling down - hide heroes
+      document.querySelectorAll('.services-hero, .locations-hero, .location-hero, .service-hero').forEach(hero => {
+        hero.classList.add('hidden');
+      });
+    } else if (currentScroll < lastScroll) {
+      // Scrolling up - show heroes
+      document.querySelectorAll('.services-hero, .locations-hero, .location-hero, .service-hero').forEach(hero => {
+        hero.classList.remove('hidden');
+      });
+    }
+    
+    lastScroll = currentScroll;
   }, { passive: true });
 }
 

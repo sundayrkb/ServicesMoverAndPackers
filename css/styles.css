@@ -581,6 +581,24 @@ img.fallback-icon {
   margin-bottom: 2rem;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   border-radius: 12px;
+  position: sticky;
+  top: 70px; /* below header */
+  z-index: 100;
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.services-hero.hidden,
+.locations-hero.hidden,
+.location-hero.hidden,
+.service-hero.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+  margin-bottom: 0;
+  padding: 0;
+  border-radius: 0;
+  height: 0;
+  overflow: hidden;
 }
 .services-hero h1,
 .locations-hero h1,
@@ -605,6 +623,16 @@ img.fallback-icon {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 1.5rem;
+}
+@media (max-width: 640px) {
+  .service-cta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .service-cta .btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
 .btn {
   display: inline-flex;
