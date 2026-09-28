@@ -130,6 +130,9 @@ function initNavigation() {
 function getFallbackHeader() {
   return `<header>
   <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Services Mover & Packers Logo">
+    </a>
     <a href="index.html" class="logo">Services Mover & Packers</a>
   </nav>
   <nav class="nav-links" aria-label="Main navigation">
