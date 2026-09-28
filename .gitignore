@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+
+# Build output
+_site/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+
+# Misc
+*.tgz
+.cache/
+
+# Local files
+*.local
+AGENTS.md
+RULES.md
+SESSION_HANDOFF.md
+PROJECT_CONTEXT.md
+GITHUB_PAGES_DEPLOY.md

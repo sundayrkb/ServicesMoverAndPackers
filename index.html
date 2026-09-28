@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Services Mover & Packers — Hyderabad</title>
+  <title class="center">Services Mover & Packers — Hyderabad</title>
   <meta name="description" content="Top-rated packers and movers in Hyderabad. Home relocation, office shifting, packing services. Call +91-9293120124 for a free quote.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/styles.css">
@@ -10,33 +10,45 @@
   <script src="partials/schema.html"></script>
 </head>
 <body>
-  <partial src="partials/header.html"></partial>
+  <div data-partial="partials/header.html"></div>
 
-  <div class="banner">
+  <div class="banner" data-fallback="banner">
     <h1>Services Mover & Packers</h1>
-    <p>Reliable. Affordable. On-time.</p>
-    <a href="services/home-relocation.html" class="btn">Get a Free Quote</a>
+    <p>Reliable. Affordable. On-time.</p>    
+    <a href="https://wa.me/919293120124?text=Hi%2C%20I%20need%20a%20quote%20for%20Packers%20and%20Movers%20services" class="btn">Get a Free Quote</a>
+    <nav>
+      <a href="tel:+919293120124" class="phone-link">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <span>Call Now</span>
+      </a>
+      <a href="https://wa.me/919293120124?text=Hi%2C%20I%20need%20a%20quote%20for%20Packers%20and%20Movers%20services" class="whatsapp-link">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378 9.86 9.86 0 0 1-1.379-5.031c-.084-.526-.084-1.078-.084-1.63 0-.553.084-1.105.084-1.658a9.87 9.87 0 0 1 1.379-5.03 9.87 9.87 0 0 1 5.03-1.38c.527.085 1.08.084 1.633.084.552 0 1.105-.085 1.657-.084a9.86 9.86 0 0 1 5.03 1.38 9.86 9.86 0 0 1 1.38 5.03c.084.526.084 1.08.084 1.63 0 .552-.084 1.105-.085 1.657a9.87 9.87 0 0 1-1.38 5.03 9.87 9.87 0 0 1-5.03 1.38c-.552 0-1.105-.085-1.657-.084z"/></svg>
+        <span>WhatsApp</span>
+      </a>
+    </nav>
   </div>
+
+  
 
   <section class="section" id="our-services">
     <h2>Our Core Services</h2>
     <div class="cards">
       <div class="card">
-        <img src="images/home-relocation.jpg" alt="Home Relocation">
+        <img src="images/home-relocation.jpg" alt="Home Relocation" data-fallback="home-relocation">
         <div class="card-body">
           <h3>Home Relocation</h3>
           <p>End-to-end home moving with packing & unpacking.</p>
         </div>
       </div>
       <div class="card">
-        <img src="images/office-shifting.jpg" alt="Office Shifting">
+        <img src="images/office-shifting.jpg" alt="Office Shifting" data-fallback="office-shifting">
         <div class="card-body">
           <h3>Office Shifting</h3>
           <p>Professional commercial relocation with minimal downtime.</p>
         </div>
       </div>
       <div class="card">
-        <img src="images/packing-services.jpg" alt="Packing Services">
+        <img src="images/packing-services.jpg" alt="Packing Services" data-fallback="packing-services">
         <div class="card-body">
           <h3>Packing Services</h3>
           <p>Premium packing materials & trained staff for fragile items.</p>
@@ -47,16 +59,23 @@
 
   <section class="section" id="contact">
     <h2>Contact Us</h2>
+    <nav>
+      <a href="https://wa.me/919293120124?text=Hi%2C%20I%20need%20a%20quote%20for%20Packers%20and%20Movers%20services" class="whatsapp-link">
+      <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378 9.86 9.86 0 0 1-1.379-5.031c-.084-.526-.084-1.078-.084-1.63 0-.553.084-1.105.084-1.658a9.87 9.87 0 0 1 1.379-5.03 9.87 9.87 0 0 1 5.03-1.38c.527.085 1.08.084 1.633.084.552 0 1.105-.085 1.657-.084a9.86 9.86 0 0 1 5.03 1.38 9.86 9.86 0 0 1 1.38 5.03c.084.526.084 1.08.084 1.63 0 .552-.084 1.105-.085 1.657a9.87 9.87 0 0 1-1.38 5.03 9.87 9.87 0 0 1-5.03 1.38c-.552 0-1.105-.085-1.657-.084z"/></svg>
+      <span>WhatsApp</span>
+      <a href="tel:+919293120124" class="phone-link">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      <span>Call Now</span>
+    </nav>
     <form name="contact" method="POST" data-netlify="true">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <textarea name="message" placeholder="Your Message"></textarea>
       <button type="submit">Send Message</button>
     </form>
-    <p>Email: info@servicesmover.tk | Phone: +91-9293120124</p>
   </section>
 
-  <partial src="partials/footer.html"></partial>
+  <div data-partial="partials/footer.html"></div>
   <script src="js/main.js"></script>
 </body>
 </html>
