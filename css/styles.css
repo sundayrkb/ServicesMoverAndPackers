@@ -470,15 +470,16 @@ footer p {
 @media (max-width: 480px) {
   .whatsapp-float,
   .call-float {
-    bottom: 16px;
+    bottom: 180px;
     width: 50px;
     height: 50px;
   }
   .whatsapp-float {
-    right: 16px;
+    right: 50px;
   }
   .call-float {
-    left: 16px;
+    left: 50px;
+    background: #215aaf;
   }
   .whatsapp-float svg,
   .call-float svg {
@@ -501,6 +502,7 @@ footer p {
   z-index: 999;
   transition: transform 0.2s, box-shadow 0.2s;
   text-decoration: none;
+  padding: 0 4px 4px 0;
 }
 .whatsapp-float:hover {
   transform: scale(1.1);
@@ -518,8 +520,8 @@ footer p {
 
 @media (max-width: 480px) {
   .whatsapp-float {
-    bottom: 16px;
-    right: 16px;
+    bottom: 180px;
+    right: 50px;
     width: 50px;
     height: 50px;
   }
